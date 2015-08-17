@@ -1,12 +1,13 @@
 GIT
   remote: https://github.com/DigitalNZ/supplejack_common.git
-  revision: 4ad6b26c9204f50b87e4564a2a1a74fc4e55c055
+  revision: b845ee809c1ac055c07130ad18fffda4b0595f4f
   specs:
     supplejack_common (0.0.2)
       actionpack (<= 4.1.4)
       activesupport (<= 4.1.4)
       chronic (<= 0.10.2)
       dimensions
+      htmlentities
       json (~> 1.7.7)
       jsonpath (~> 0.5.0)
       mimemagic
@@ -150,6 +151,7 @@ GEM
       guard (~> 2.1)
       rspec (>= 2.14, < 4.0)
     hike (1.2.3)
+    htmlentities (4.3.4)
     i18n (0.7.0)
     jquery-rails (3.1.1)
       railties (>= 3.0, < 5.0)
@@ -173,7 +175,7 @@ GEM
     mime-types (1.25.1)
     mimemagic (0.3.0)
     mini_portile (0.6.2)
-    minitest (5.7.0)
+    minitest (5.8.0)
     mongoid (4.0.0)
       activemodel (~> 4.0)
       moped (~> 2.0.0)
@@ -181,7 +183,7 @@ GEM
       tzinfo (>= 0.3.37)
     mongoid_paranoia (0.1.2)
       mongoid (> 3)
-    moped (2.0.6)
+    moped (2.0.7)
       bson (~> 3.0)
       connection_pool (~> 2.0)
       optionable (~> 0.2.0)
