@@ -50,10 +50,7 @@ group :development do
   gem 'better_errors',      '~> 1.1.0 '
   gem 'guard-rspec'
   gem 'rb-fsevent',         '~> 0.9.1'
-
-  if RUBY_VERSION =~ /2/
-    gem 'pry-byebug'
-  end
+  gem 'pry-byebug' if RUBY_VERSION =~ /2/
 end
 
 group :development, :test do

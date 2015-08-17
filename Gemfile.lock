@@ -74,6 +74,8 @@ GEM
       erubis (>= 2.6.6)
     bson (3.2.1)
     builder (3.2.2)
+    byebug (5.0.0)
+      columnize (= 0.9.0)
     capybara (2.4.1)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -108,12 +110,6 @@ GEM
       rails (>= 3, < 5)
     daemons (1.1.9)
     database_cleaner (1.3.0)
-    debugger (1.6.8)
-      columnize (>= 0.3.1)
-      debugger-linecache (~> 1.2.0)
-      debugger-ruby_core_source (~> 1.3.5)
-    debugger-linecache (1.2.0)
-    debugger-ruby_core_source (1.3.8)
     devise (3.0.4)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -203,6 +199,9 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-byebug (3.2.0)
+      byebug (~> 5.0)
+      pry (~> 0.10)
     quiet_assets (1.0.3)
       railties (>= 3.1, < 5.0)
     rack (1.5.5)
@@ -326,7 +325,6 @@ DEPENDENCIES
   coffee-rails (~> 4.0.1)
   cucumber-rails (>= 1.4.1)
   database_cleaner (~> 1.3.0)
-  debugger
   devise (~> 3.0.4)
   factory_girl_rails (>= 4.1.0)
   figaro (>= 0.7.0)
@@ -338,6 +336,7 @@ DEPENDENCIES
   oai!
   parse-cron
   protected_attributes
+  pry-byebug
   quiet_assets (>= 1.0.1)
   rails (= 4.1.4)
   rb-fsevent (~> 0.9.1)
@@ -353,3 +352,6 @@ DEPENDENCIES
   timecop
   uglifier (>= 1.0.3)
   whenever
+
+BUNDLED WITH
+   1.10.5
