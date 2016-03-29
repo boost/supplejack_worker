@@ -12,7 +12,7 @@ development:
     default:
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
-      database: ngataonga_worker_development
+      database: supplejack_worker_development
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
@@ -35,7 +35,7 @@ development:
         # operation on failure. (default: 1)
         # retry_interval: 1
     api:
-      database: ngataonga_api_development
+      database: supplejack_api_development
       hosts:
         <%= ENV['API_MONGOID_HOSTS'].gsub(/\s+/, "").split(',') %>
       options:
@@ -83,7 +83,7 @@ development:
 test:
   sessions:
     default:
-      database: ngataonga_worker_test
+      database: supplejack_worker_test
       hosts:
         - localhost:27017
       options:
@@ -93,7 +93,7 @@ test:
         max_retries: 1
         retry_interval: 0
     api:
-      database: ngataonga_api_test
+      database: supplejack_api_test
       hosts:
         <%= ENV['API_MONGOID_HOSTS'].gsub(/\s+/, "").split(',') %>
       options:
@@ -102,14 +102,14 @@ test:
 staging:
   sessions:
     default:
-      database: ngataonga_worker_staging
+      database: supplejack_worker_staging
       hosts:
         - mongo.boost.co.nz:27017
       options:
         read: :primary
         pool_size: 500
     api:
-      database: ngataonga_api_staging
+      database: supplejack_api_staging
       hosts:
         <%= ENV['API_MONGOID_HOSTS'].gsub(/\s+/, "").split(',') %>
       options:

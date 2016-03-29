@@ -10,6 +10,7 @@
 
 development:
   API_HOST: "http://localhost:3000"
+  API_MONGOID_HOSTS: "localhost:27017"
   MANAGER_HOST: "http://localhost:3001"
   MANAGER_API_KEY: "jRvU4MV5FGmhSoxpKrXz"
   HARVESTER_CACHING_ENABLED: true
@@ -19,6 +20,7 @@ development:
 
 test:
   API_HOST: "http://localhost:3000"
+  API_MONGOID_HOSTS: "localhost:27017"
   MANAGER_HOST: "http://localhost:3001"
   MANAGER_API_KEY: "12345"
   HARVESTER_CACHING_ENABLED: false
@@ -28,6 +30,7 @@ test:
 
 staging:
   API_HOST: "http://api.harvester.org"
+  API_MONGOID_HOSTS: "localhost:27017"
   MANAGER_HOST: "http://harvester.org"
   MANAGER_API_KEY: "jRvU4MV5FGmhSoxpKrXz"
   HARVESTER_CACHING_ENABLED: true
@@ -38,10 +41,10 @@ staging:
   SECRET_TOKEN: 'some long hash value'
   DEVISE_MAILER: "info@harvester.org"
   LINKCHECKER_RECIPIENTS: "bill@harvester.org"
-  API_MONGOID_HOSTS: "localhost:27017"
 
 production:
   API_HOST: "http://api.harvester.org"
+  API_MONGOID_HOSTS: "localhost:27017"
   MANAGER_HOST: "http://harvester.org"
   MANAGER_API_KEY: "abc123"
   HARVESTER_CACHING_ENABLED: true
@@ -53,4 +56,3 @@ production:
   SECRET_TOKEN: 'some long hash value'
   DEVISE_MAILER: "info@harvester.org"
   LINKCHECKER_RECIPIENTS: "bill@harvester.org"
-  API_MONGOID_HOSTS: "localhost:27017"
